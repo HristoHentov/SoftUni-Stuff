@@ -53,7 +53,7 @@ public class _01DragonSharp {
 
     public static boolean checkCondition(String conditionString) {
 
-        String[] conditionElements = conditionString.split("[<>=]+"); // Get only the digits (from 5==5 - 5 and 5, from 11<8 - 11 and 8)
+        String[] conditionElements = conditionString.split("[<>=]+");
         String sign = conditionString.replaceAll("\\d", ""); // get rid of the digits
 
         int left = Integer.parseInt(conditionElements[0]); // get left digit
